@@ -1,0 +1,41 @@
+p {
+	line-height: 2;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Header */
+.btn {
+	background-color: #fc6027;
+}
+
+.btn:hover {
+	background-color: #e63e01;
+}
+
+/* welcome */
+#welcome {
+	background-color: #fc6027;
+}
+
+/* section info */
+.card {
+	border-color: #fc6027;
+}
+
+.card-header {
+	color: #fc6027;
+}
+
+/* section importante */
+#importante {
+	background-color: #4b4fa1;
+	color: white;
+}
+
+/* section - agendamento */
+#agendamento {
+	background-color: #fc6027;
+}
