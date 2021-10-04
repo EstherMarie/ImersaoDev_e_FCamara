@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- fonte -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 		<!-- Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -53,7 +57,7 @@
 								<a class="nav-link text-black text-center" href="#orientacoes">Orientações</a>
 							</li>
 							<li class="nav-item ms-2">
-								<a class="nav-link btn rounded-pill p-2 text-black" href="#agendamento">Agendamento</a>
+								<a class="nav-link btn rounded-pill p-2 text-light fw-bold" href="#agendamento">Agendamento</a>
 							</li>
 						</ul>
 					</div>
@@ -67,7 +71,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<h1>Boas Vindas de volta!</h1>
+							<h1 class="fw-bold">Boas Vindas de volta!</h1>
 							<p class="lead">Estamos com saudades!</p>
 							<p>
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, quod ratione qui libero adipisci
@@ -280,7 +284,7 @@
 
 							<!-- botão -->
 							<button
-								class="btn d-block mt-3 ms-auto fw-bold"
+								class="btn d-block mt-3 ms-auto text-light fw-bold"
 								id="botao-agendamento"
 								type="submit"
 								onclick="confirmarAgendamento()"
@@ -310,7 +314,7 @@
 									<div class="modal-body"></div>
 									<div class="modal-footer">
 										<button type="button" class="btn bg-light btn-outline-success">Imprimir comprovante</button>
-										<button type="button" class="btn" data-bs-dismiss="modal">Fechar</button>
+										<button type="button" class="btn text-light fw-bold" data-bs-dismiss="modal">Fechar</button>
 									</div>
 								</div>
 							</div>

@@ -1,3 +1,11 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	color: #fc6027;
+}
+
 p {
 	line-height: 2;
 }
@@ -13,11 +21,6 @@ a {
 
 .btn:hover {
 	background-color: #e63e01;
-}
-
-/* intro */
-#intro {
-	background-color: #fc6027;
 }
 
 /* section info */
