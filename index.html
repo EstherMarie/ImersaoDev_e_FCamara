@@ -225,6 +225,12 @@
 						<form>
 							<h2 class="mb-4" id="titulo-agendamento">Agendamento</h2>
 
+							<!-- alerta de usuário inválido -->
+							<div class="alert alert-danger alert-dismissible fade show d-none" role="alert">
+								Usuário ou email inválido
+								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+							</div>
+
 							<!-- nome -->
 							<fieldset class="mb-2">
 								<label class="form-label" for="nome">Nome:</label>
@@ -283,14 +289,7 @@
 							</fieldset>
 
 							<!-- botão -->
-							<button
-								class="btn d-block mt-3 ms-auto text-light fw-bold"
-								id="botao-agendamento"
-								type="submit"
-								onclick="confirmarAgendamento()"
-								data-bs-toggle="modal"
-								data-bs-target="#modal-agendamento"
-							>
+							<button class="btn d-block mt-3 ms-auto text-light fw-bold" id="botao-agendamento" type="submit">
 								Confirmar
 							</button>
 						</form>
@@ -313,7 +312,6 @@
 									</div>
 									<div class="modal-body"></div>
 									<div class="modal-footer">
-										<button type="button" class="btn bg-light btn-outline-success">Imprimir comprovante</button>
 										<button type="button" class="btn text-light fw-bold" data-bs-dismiss="modal">Fechar</button>
 									</div>
 								</div>

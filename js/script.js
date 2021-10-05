@@ -1,18 +1,43 @@
+let usuarioAutenticado = false;
+let botaoAgendamento = document.querySelector('#botao-agendamento');
+let modal = new bootstrap.Modal(document.getElementById('modal-agendamento'), {
+	keyboard: false,
+	backdrop: 'static',
+});
+
 function confirmarAgendamento() {
 	const nome = document.querySelector('#nome').value;
 	const email = document.querySelector('#email').value;
 	const data = document.querySelector('#data').value;
-	const escritorio =
-		document.querySelector('#escritorio-sao-paulo').checked == true
-			? 'São Paulo'
-			: 'Santos';
+	const escritorio = document.querySelector('#escritorio-sao-paulo').checked == true ? 'São Paulo' : 'Santos';
 	const estacao = document.querySelector('#estacao').value;
 
 	const dados = { nome, email, data, escritorio, estacao };
 
-	document.querySelector('#botao-agendamento').disabled = true;
+	// Validação
+	const usuarios = [
+		{ nome: 'Jasmim', email: 'jasmim@email.com' },
+		{ nome: 'João', email: 'joao@email.com' },
+	];
 
-	agendamentoConcluido(dados);
+	usuarios.forEach((user) => {
+		if (nome == user.nome && email == user.email) {
+			usuarioAutenticado = true;
+		}
+	});
+
+	if (usuarioAutenticado) {
+		console.log('autenticado');
+		modal.show();
+		agendamentoConcluido(dados);
+		document.querySelector('.alert').classList.toggle('d-none');
+	} else {
+		console.log('invalido');
+		document.querySelector('.alert').classList.toggle('d-none');
+
+		// hide modal
+		modal.hide();
+	}
 }
 
 function agendamentoConcluido(dados) {
@@ -25,4 +50,11 @@ function agendamentoConcluido(dados) {
 	let modalContent = document.querySelector('.modal-body');
 	modalContent.appendChild(h4);
 	modalContent.append(p);
+
+	document.querySelector('#botao-agendamento').disabled = true;
 }
+
+botaoAgendamento.addEventListener('click', (event) => {
+	confirmarAgendamento();
+	event.preventDefault();
+});
