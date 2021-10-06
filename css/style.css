@@ -14,21 +14,33 @@ a {
 	text-decoration: none;
 }
 
-/* Header */
 .btn {
 	background-color: #fc6027;
+	font-size: 14pt;
+	font-weight: bold;
 }
 
 .btn:hover {
 	background-color: #e63e01;
 }
 
+/* nav */
+nav a {
+	font-size: 14pt;
+}
+
 /* section info */
+#info span {
+	color: #fc6027;
+}
+
 .card {
 	border-color: #fc6027;
 }
 
 .card-header {
+	background-color: transparent;
+	border: none;
 	color: #fc6027;
 }
 
@@ -41,4 +53,10 @@ a {
 /* section - agendamento */
 #agendamento {
 	background-color: #fc6027;
+}
+
+/* footer */
+#creditos p,
+#creditos a {
+	color: #939393;
 }
