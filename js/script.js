@@ -1,4 +1,5 @@
 let usuarioAutenticado = false;
+let dadosPreenchidos = false;
 let botaoAgendamento = document.querySelector('#botao-agendamento');
 let modal = new bootstrap.Modal(document.getElementById('modal-agendamento'), {
 	keyboard: false,
@@ -14,26 +15,41 @@ function confirmarAgendamento() {
 
 	const dados = { nome, email, data, escritorio, estacao };
 
-	// Validação
+	validacao(dados);
+}
+
+function validacao(dados) {
+	// Usuários cadastrados
 	const usuarios = [
 		{ nome: 'Jasmim', email: 'jasmim@email.com' },
 		{ nome: 'João', email: 'joao@email.com' },
 	];
 
+	// verificando se o usuário está na lista de cadastrados
 	usuarios.forEach((user) => {
-		if (nome == user.nome && email == user.email) {
+		if (dados.nome == user.nome && dados.email == user.email) {
 			usuarioAutenticado = true;
 		}
 	});
 
-	if (usuarioAutenticado) {
+	// Verificando se os campos foram preenchidos
+	for (let key in dados) {
+		if (dados[key] == '') {
+			dadosPreenchidos = false;
+			break;
+		} else {
+			dadosPreenchidos = true;
+		}
+	}
+
+	if (usuarioAutenticado && dadosPreenchidos) {
 		console.log('autenticado');
 		modal.show();
+		document.querySelector('.alert').classList.add('d-none');
 		agendamentoConcluido(dados);
-		document.querySelector('.alert').classList.toggle('d-none');
 	} else {
 		console.log('invalido');
-		document.querySelector('.alert').classList.toggle('d-none');
+		document.querySelector('.alert').classList.remove('d-none');
 
 		// hide modal
 		modal.hide();

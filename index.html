@@ -222,37 +222,37 @@
 			<section class="py-5 px-3 px-md-0" id="agendamento">
 				<div class="container">
 					<div class="card p-3 p-md-5 shadow">
-						<form>
+						<form novalidate>
 							<h2 class="mb-4" id="titulo-agendamento">Agendamento</h2>
 
 							<!-- alerta de usuário inválido -->
 							<div class="alert alert-danger alert-dismissible fade show d-none" role="alert">
-								Usuário ou email inválido
+								Dados inválidos
 								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 							</div>
 
 							<!-- nome -->
-							<fieldset class="mb-2">
+							<fieldset class="mb-3">
 								<label class="form-label" for="nome">Nome:</label>
 								<input class="form-control" id="nome" type="text" required />
 							</fieldset>
 
 							<!-- email -->
-							<fieldset class="mb-2">
+							<fieldset class="mb-3">
 								<label class="form-label" for="email">E-mail:</label>
 								<input class="form-control" id="email" type="email" required />
 							</fieldset>
 
 							<!-- data -->
-							<fieldset class="mb-2">
+							<fieldset class="mb-3">
 								<label class="form-label" for="data">Data:</label>
-								<input class="form-control" id="data" type="date" required />
+								<input class="form-control" id="data" type="date" value="" required />
 							</fieldset>
 
 							<!-- escritório -->
-							<fieldset class="mb-2">
-								<p class="mb-0">Escritório:</p>
-								<div class="form-check">
+							<fieldset class="mb-3">
+								<p class="mb-0 d-inline">Escritório:</p>
+								<div class="form-check form-check-inline ms-2">
 									<input
 										class="form-check-input"
 										type="radio"
@@ -263,7 +263,7 @@
 									/>
 									<label class="form-check-label" for="escritorio-sao-paulo"> São Paulo </label>
 								</div>
-								<div class="form-check mb-2">
+								<div class="form-check form-check-inline">
 									<input
 										class="form-check-input"
 										type="radio"
@@ -277,9 +277,10 @@
 							</fieldset>
 
 							<!-- estação de trabalho -->
-							<fieldset class="mb-2">
+							<fieldset class="mb-3">
 								<label class="form-label" for="estacao">Estações de trabalho disponíveis:</label>
-								<select id="estacao" required>
+								<select id="estacao" class="ms-2" required>
+									<option selected disabled value="">Selecione</option>
 									<option aria-label="estação número 2" value="2">2</option>
 									<option aria-label="estação número 6" value="6">6</option>
 									<option aria-label="estação número 9" value="9">9</option>
