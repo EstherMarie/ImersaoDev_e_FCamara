@@ -14,7 +14,6 @@ function confirmarAgendamento() {
 	const estacao = document.querySelector('#estacao').value;
 
 	const dados = { nome, email, data, escritorio, estacao };
-
 	validacao(dados);
 }
 
@@ -51,7 +50,6 @@ function validacao(dados) {
 		console.log('invalido');
 		document.querySelector('.alert').classList.remove('d-none');
 
-		// hide modal
 		modal.hide();
 	}
 }
@@ -61,13 +59,28 @@ function agendamentoConcluido(dados) {
 	h4.textContent = `Olá, ${dados.nome}!`;
 
 	let p = document.createElement('p');
-	p.textContent = `Você está agendado(a) para o dia ${dados.data}, no escritório em ${dados.escritorio} e a sua estação de trabalho é a número ${dados.estacao}. O comprovante de agendamento foi enviado para o seu email.`;
+	p.textContent = `Você está agendado(a) para o dia ${document.querySelector('#data').valueAsDate.getDate() + 1} / ${
+		document.querySelector('#data').valueAsDate.getMonth() + 1
+	} , no escritório em ${dados.escritorio} e a sua estação de trabalho é a número ${
+		dados.estacao
+	}. O comprovante de agendamento foi enviado para o seu email.`;
 
 	let modalContent = document.querySelector('.modal-body');
 	modalContent.appendChild(h4);
 	modalContent.append(p);
 
+	// desabilitando o botão submit
 	document.querySelector('#botao-agendamento').disabled = true;
+
+	// desabilitando os campos input
+	document.querySelector('select').value = '';
+	let listaInput = document.querySelectorAll('input');
+
+	for (let i = 0; i < listaInput.length; i++) {
+		listaInput[i].value = '';
+		listaInput[i].disabled = true;
+		listaInput[i].checked = false;
+	}
 }
 
 botaoAgendamento.addEventListener('click', (event) => {
