@@ -7,14 +7,16 @@ let modal = new bootstrap.Modal(document.getElementById('modal-agendamento'), {
 });
 
 function confirmarAgendamento() {
-	const nome = document.querySelector('#nome').value;
-	const email = document.querySelector('#email').value;
-	const data = document.querySelector('#data').value;
-	const escritorio = document.querySelector('#escritorio-sao-paulo').checked == true ? 'São Paulo' : 'Santos';
-	const estacao = document.querySelector('#estacao').value;
+	// armazenando os dados inseridos em uma estrutura de dados
+	const dadosInseridos = {
+		nome: document.querySelector('#nome').value,
+		email: document.querySelector('#email').value,
+		data: document.querySelector('#data').value,
+		escritorio: document.querySelector('#escritorio-sao-paulo').checked == true ? 'São Paulo' : 'Santos',
+		estacao: document.querySelector('#estacao').value,
+	};
 
-	const dados = { nome, email, data, escritorio, estacao };
-	validacao(dados);
+	validacao(dadosInseridos);
 }
 
 function validacao(dados) {

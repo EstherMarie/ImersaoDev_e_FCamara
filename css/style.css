@@ -1,9 +1,14 @@
+:root {
+	--primary: #ef653b;
+	--secondary: #4b4fa1;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-	color: #fc6027;
+	color: var(--primary);
 }
 
 p {
@@ -15,14 +20,14 @@ a {
 }
 
 .btn {
-	background-color: #fc6027;
+	background-color: var(--primary);
 	font-size: 14pt;
 	font-weight: bold;
 	cursor: pointer;
 }
 
 .btn:hover {
-	background-color: #e63e01;
+	background-color: #ca5531;
 }
 
 /* nav */
@@ -37,28 +42,33 @@ nav a {
 
 /* section info */
 #info span {
-	color: #fc6027;
+	color: #ca4f29;
 }
 
 .card {
-	border-color: #fc6027;
+	border-color: var(--primary);
 }
 
 .card-header {
 	background-color: transparent;
 	border: none;
-	color: #fc6027;
+	color: var(--primary);
 }
 
 /* section importante */
 #importante {
-	background-color: #4b4fa1;
+	background-color: var(--secondary);
 	color: white;
+}
+
+/* section - protocolos */
+#protocolos span {
+	color: #ca4f29;
 }
 
 /* section - agendamento */
 #agendamento {
-	background-color: #fc6027;
+	background-color: var(--primary);
 }
 
 #botao-agendamento {
