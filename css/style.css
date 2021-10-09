@@ -18,6 +18,7 @@ a {
 	background-color: #fc6027;
 	font-size: 14pt;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .btn:hover {
@@ -27,6 +28,11 @@ a {
 /* nav */
 nav a {
 	font-size: 14pt;
+}
+
+/* intro */
+#intro {
+	background-color: #fff3e050;
 }
 
 /* section info */
@@ -53,6 +59,15 @@ nav a {
 /* section - agendamento */
 #agendamento {
 	background-color: #fc6027;
+}
+
+#botao-agendamento {
+	box-shadow: 0px 5px 0px #ac421c;
+}
+
+#botao-agendamento:active {
+	transform: translateY(5px);
+	box-shadow: none;
 }
 
 /* footer */
