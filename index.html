@@ -1,390 +1,508 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- fonte -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
-		<!-- Bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-			crossorigin="anonymous"
-		/>
-		<!-- Font Awesome -->
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Projeto - Grupo FCamara</title>
-	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-md navbar-light bg-light px-3 px-md-0">
-				<div class="container">
-					<!-- Logo -->
-					<a href="#" class="navbar-brand" aria-label="Logo Grupo FCamara"
-						><img
-							src="https://d335luupugsy2.cloudfront.net/cms/files/107693/1623954137/$7ddm446fyo"
-							alt="logo"
-							class="logo"
-					/></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Projeto - Grupo FCamara</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light px-3 px-md-0">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand" aria-label="Logo Grupo FCamara"
+            ><img
+              src="https://d335luupugsy2.cloudfront.net/cms/files/107693/1623954137/$7ddm446fyo"
+              alt="logo"
+              class="logo"
+          /></a>
 
-					<!-- botão collapse -->
-					<button
-						class="navbar-toggler"
-						data-bs-toggle="collapse"
-						data-bs-target="#navMenu"
-						aria-label="botão barra de navegação"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+          <!-- botão collapse -->
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-label="botão barra de navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-					<!-- navbar links -->
-					<div class="navbar-nav collapse navbar-collapse mb-3 mb-md-0" id="navMenu">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item d-flex justify-content-end mx-2">
-								<a class="nav-link text-black text-center" href="#info">Informações</a>
-							</li>
-							<li class="nav-item d-flex justify-content-end mx-2">
-								<a class="nav-link text-black text-center" href="#protocolos">Protocolos</a>
-							</li>
-							<li class="nav-item d-flex justify-content-end ms-2">
-								<a class="nav-link btn p-2 text-light" href="#agendamento">Agendamento</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
+          <!-- navbar links -->
+          <div
+            class="navbar-nav collapse navbar-collapse mb-3 mb-md-0"
+            id="navMenu"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item d-flex justify-content-end mx-2">
+                <a class="nav-link text-black text-center" href="#info"
+                  >Informações</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-end mx-2">
+                <a class="nav-link text-black text-center" href="#protocolos"
+                  >Protocolos</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-end ms-2">
+                <a class="nav-link btn p-2 text-light" href="#agendamento"
+                  >Agendamento</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-		<main>
-			<!-- intro -->
-			<section class="py-5 px-3 px-md-0 border-bottom" id="intro">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 d-flex flex-column align-items-md-start justify-content-center">
-							<h1 class="fw-bold">Boas-vindas de volta!</h1>
-							<p class="lead">Estamos com saudades!</p>
-							<a class="btn p-2 text-light" href="#agendamento" role="button">Faça o seu agendamento</a>
-						</div>
-						<div class="col-md-6 d-none d-md-flex">
-							<img class="img-fluid" src="./img/Elbow bump-pana.svg" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
+    <main>
+      <!-- intro -->
+      <section class="py-5 px-3 px-md-0 border-bottom" id="intro">
+        <div class="container">
+          <div class="row">
+            <div
+              class="
+                col-md-6
+                d-flex
+                flex-column
+                align-items-md-start
+                justify-content-center
+              "
+            >
+              <h1 class="fw-bold">Boas-vindas de volta!</h1>
+              <p class="lead mb-0">Estamos com saudades!</p>
+              <p class="lead">Vamos marcar o nosso reencontro?</p>
+              <a class="btn p-2 text-light" href="#agendamento" role="button"
+                >Faça o seu agendamento</a
+              >
+            </div>
+            <div class="col-md-6 d-none d-md-flex">
+              <img class="img-fluid" src="./img/Elbow bump-pana.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Seção - info -->
-			<section class="py-5 px-3 px-md-0" id="info">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<img class="img-fluid" src="./img/Person with medical mask-pana.svg" alt="" />
-						</div>
-						<div class="col-md-6 d-flex flex-column justify-content-center">
-							<h2 class="mb-3">Informações</h2>
-							<p>
-								<span>#SangueLaranja</span>, estamos planejando com muita cautela a reabertura dos nossos escritórios.
-							</p>
-							<p>
-								Listamos a seguir algumas informações importantes sobre como será o funcionamento dos nossos
-								escritórios:
-							</p>
-						</div>
-					</div>
+      <!-- Seção - info -->
+      <section class="py-5 px-3 px-md-0" id="info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                class="img-fluid"
+                src="./img/Person with medical mask-pana.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h2 class="mb-3">Informações</h2>
+              <p>
+                Este período de trabalho remoto não foi fácil para ninguém.
+                Porém devido ao bom andamento da vacinação, estamos planejando
+                com muita cautela o processo de reabertura dos nossos
+                escritórios.
+              </p>
+              <p>
+                Listamos a seguir algumas informações sobre como será o
+                funcionamento dos escritórios, para que o processo de reabertura
+                ocorra com organização.
+              </p>
+            </div>
+          </div>
 
-					<!-- cards -->
-					<div class="row my-3 g-3">
-						<div class="col-md-3">
-							<div class="card text-center h-100">
-								<div class="card-header pt-3">
-									<i class="far fa-building fa-3x"></i>
-								</div>
-								<div class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4">
-									<p class="card-text">
-										Nosso escritório principal em São Paulo e a nossa filial em Santos estarão disponíveis para
-										agendamento.
-									</p>
-								</div>
-							</div>
-						</div>
+          <!-- cards -->
+          <div class="row my-3 g-3">
+            <div class="col-md-3">
+              <div class="card text-center h-100">
+                <div class="card-header pt-3">
+                  <i class="far fa-building fa-3x"></i>
+                </div>
+                <div
+                  class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4"
+                >
+                  <p class="card-text">
+                    Nosso escritório principal em São Paulo e a nossa filial em
+                    Santos estarão disponíveis para agendamento.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-						<div class="col-md-3">
-							<div class="card text-center h-100">
-								<div class="card-header pt-3">
-									<i class="far fa-calendar-alt fa-3x"></i>
-								</div>
-								<div class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4">
-									<p class="card-text">O retorno ao escritório só será possível através do sistema de agendamento.</p>
-								</div>
-							</div>
-						</div>
+            <div class="col-md-3">
+              <div class="card text-center h-100">
+                <div class="card-header pt-3">
+                  <i class="far fa-calendar-alt fa-3x"></i>
+                </div>
+                <div
+                  class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4"
+                >
+                  <p class="card-text">
+                    O retorno ao escritório só será possível através do sistema
+                    de agendamento.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-						<div class="col-md-3">
-							<div class="card text-center h-100">
-								<div class="card-header pt-3">
-									<i class="far fa-clock fa-3x"></i>
-								</div>
-								<div class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4">
-									<p class="card-text">O horário de funcionamento dos escritórios será das 8h às 18h.</p>
-								</div>
-							</div>
-						</div>
+            <div class="col-md-3">
+              <div class="card text-center h-100">
+                <div class="card-header pt-3">
+                  <i class="far fa-clock fa-3x"></i>
+                </div>
+                <div
+                  class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4"
+                >
+                  <p class="card-text">
+                    O horário de funcionamento dos escritórios será das 8h às
+                    18h.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-						<div class="col-md-3">
-							<div class="card text-center h-100">
-								<div class="card-header pt-3">
-									<i class="fas fa-user-friends fa-3x"></i>
-								</div>
-								<div class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4">
-									<p class="card-text">
-										Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="col-md-3">
+              <div class="card text-center h-100">
+                <div class="card-header pt-3">
+                  <i class="fas fa-user-friends fa-3x"></i>
+                </div>
+                <div
+                  class="card-body d-flex align-items-center px-5 p-md-3 p-lg-4"
+                >
+                  <p class="card-text">
+                    Os escritórios só podem comportar até 40% dos consultores,
+                    conforme a legislação.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Section - importante -->
-			<section class="py-5" id="importante">
-				<div class="container">
-					<h3 class="h2 text-center mb-3">Importante!</h3>
-					<div class="mt-4">
-						<p class="display-5 text-center my-5">
-							O retorno é <span class="text-decoration-underline">opcional</span>.
-						</p>
-						<p class="lead text-center">
-							Se você ainda não se sente à vontade para ir, ou mora fora das regiões onde estão os escritórios,
-							permaneça em casa.
-						</p>
-					</div>
-				</div>
-			</section>
+      <!-- Section - importante -->
+      <section class="py-5" id="importante">
+        <div class="container">
+          <h3 class="h2 text-center mb-3">Importante!</h3>
+          <div class="mt-4">
+            <p class="display-5 text-center my-5">
+              O retorno é
+              <span class="text-decoration-underline">opcional</span>.
+            </p>
+            <p class="lead text-center">
+              Se você ainda não se sente à vontade para ir, ou mora fora das
+              regiões onde estão os escritórios, permaneça em casa.
+            </p>
+          </div>
+        </div>
+      </section>
 
-			<!-- Seção - Protocolos -->
-			<section class="py-5 px-3 px-md-0" id="protocolos">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<h2 class="mb-3">Protocolos</h2>
-							<p>
-								Caso esteja interessado em agendar o seu retorno aos escritórios, será necessário seguir os protocolos a
-								seguir para que todo o processo ocorra com segurança.
-							</p>
-						</div>
-						<div class="col-md-6">
-							<img class="img-fluid" src="./img/Prevent epidemic rebound-pana.svg" alt="" />
-						</div>
-					</div>
-					<!-- list group -->
-					<div class="list-group mt-5">
-						<div class="list-group-item p-3 d-flex align-items-center">
-							<div class="me-3">
-								<i class="fas fa-check-circle text-success"></i>
-							</div>
-							<p class="mb-0">Será medida a <b>temperatura</b> ao chegar no escritório.</p>
-						</div>
-						<div class="list-group-item p-3 d-flex align-items-center">
-							<div class="me-3">
-								<i class="fas fa-check-circle text-success"></i>
-							</div>
-							<p class="mb-0">
-								Todos os consultores deverão <b>usar máscaras</b> dentro das acomodações dos escritórios.
-							</p>
-						</div>
-						<div class="list-group-item p-3 d-flex align-items-center">
-							<div class="me-3">
-								<i class="fas fa-check-circle text-success"></i>
-							</div>
-							<p class="mb-0">
-								É importante respeitar sempre o <b>distanciamento social</b>. Lembre-se de manter a distância mínima de
-								2 metros.
-							</p>
-						</div>
-						<div class="list-group-item p-3 d-flex align-items-center">
-							<div class="me-3">
-								<i class="fas fa-check-circle text-success"></i>
-							</div>
-							<p class="mb-0">
-								Para que haja o distanciamento necessário, existem <b>adesivos nas mesas</b> sinalizando onde os
-								<span>#SangueLaranjas</span> devem sentar.
-							</p>
-						</div>
-						<div class="list-group-item p-3 d-flex align-items-center">
-							<div class="me-3">
-								<i class="fas fa-check-circle text-success"></i>
-							</div>
-							<p class="mb-0">
-								Em <b>caso de sintomas</b> como febre, dor de cabeça, perda de olfato e paladar,
-								<b>notifique a empresa e #FiqueEmCasa</b>.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- Seção - Protocolos -->
+      <section class="py-5 px-3 px-md-0" id="protocolos">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="mb-3">Protocolos</h2>
+              <p>
+                Para garantir a segurança dos
+                <span>#SangueLaranjas</span> durante a reabertura dos
+                escritórios, será necessário que todos sigam os seguintes
+                protocolos e recomendações.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="img-fluid"
+                src="./img/Prevent epidemic rebound-pana.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- list group -->
+          <div class="list-group mt-5">
+            <div class="list-group-item p-3 d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-check-circle text-success"></i>
+              </div>
+              <p class="mb-0">
+                Será medida a <b>temperatura</b> ao chegar no escritório.
+              </p>
+            </div>
+            <div class="list-group-item p-3 d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-check-circle text-success"></i>
+              </div>
+              <p class="mb-0">
+                Todos os consultores deverão <b>usar máscaras</b> dentro das
+                acomodações dos escritórios.
+              </p>
+            </div>
+            <div class="list-group-item p-3 d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-check-circle text-success"></i>
+              </div>
+              <p class="mb-0">
+                É importante respeitar sempre o <b>distanciamento social</b>.
+                Lembre-se de manter a distância mínima de 2 metros.
+              </p>
+            </div>
+            <div class="list-group-item p-3 d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-check-circle text-success"></i>
+              </div>
+              <p class="mb-0">
+                Para que haja o distanciamento necessário, existem
+                <b>adesivos nas mesas</b> sinalizando onde os
+                <span>#SangueLaranjas</span> devem sentar.
+              </p>
+            </div>
+            <div class="list-group-item p-3 d-flex align-items-center">
+              <div class="me-3">
+                <i class="fas fa-check-circle text-success"></i>
+              </div>
+              <p class="mb-0">
+                Em <b>caso de sintomas</b> como febre, dor de cabeça, perda de
+                olfato e paladar, <b>notifique a empresa e fique em casa</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Seção - agendamento -->
-			<section class="py-5 px-3 px-md-0" id="agendamento">
-				<div class="container">
-					<div class="card p-3 p-md-5 shadow">
-						<form>
-							<h2 class="mb-4" id="titulo-agendamento">Agendamento</h2>
+      <!-- Seção - agendamento -->
+      <section class="py-5 px-3 px-md-0" id="agendamento">
+        <div class="container">
+          <div class="card p-3 p-md-5 shadow">
+            <form>
+              <h2 class="mb-4" id="titulo-agendamento">Agendamento</h2>
 
-							<!-- alerta de usuário inválido -->
-							<div class="alert alert-danger alert-dismissible fade show d-none" role="alert">
-								Dados inválidos
-								<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-							</div>
+              <!-- alerta de usuário inválido -->
+              <div
+                class="alert alert-danger alert-dismissible fade show d-none"
+                role="alert"
+              >
+                Dados inválidos
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
 
-							<!-- nome -->
-							<fieldset class="mb-3">
-								<label class="form-label" for="nome">Nome:</label>
-								<input class="form-control" id="nome" type="text" required />
-							</fieldset>
+              <!-- nome -->
+              <fieldset class="mb-3">
+                <label class="form-label" for="nome">Nome:</label>
+                <input class="form-control" id="nome" type="text" required />
+              </fieldset>
 
-							<!-- email -->
-							<fieldset class="mb-3">
-								<label class="form-label" for="email">E-mail:</label>
-								<input class="form-control" id="email" type="email" required />
-							</fieldset>
+              <!-- email -->
+              <fieldset class="mb-3">
+                <label class="form-label" for="email">E-mail:</label>
+                <input class="form-control" id="email" type="email" required />
+              </fieldset>
 
-							<!-- data -->
-							<fieldset class="mb-3">
-								<label class="form-label" for="data">Data:</label>
-								<input class="form-control" id="data" type="date" value="" required />
-							</fieldset>
+              <!-- data -->
+              <fieldset class="mb-3">
+                <label class="form-label" for="data">Data:</label>
+                <input
+                  class="form-control"
+                  id="data"
+                  type="date"
+                  value=""
+                  required
+                />
+              </fieldset>
 
-							<!-- escritório -->
-							<fieldset class="mb-3">
-								<p class="mb-0 d-inline">Escritório:</p>
-								<div class="form-check form-check-inline ms-2">
-									<input
-										class="form-check-input"
-										type="radio"
-										name="escritorio"
-										id="escritorio-sao-paulo"
-										value="sao-paulo"
-										required
-									/>
-									<label class="form-check-label" for="escritorio-sao-paulo"> São Paulo </label>
-								</div>
-								<div class="form-check form-check-inline">
-									<input
-										class="form-check-input"
-										type="radio"
-										name="escritorio"
-										id="escritorio-santos"
-										value="santos"
-										required
-									/>
-									<label class="form-check-label" for="escritorio-santos"> Santos </label>
-								</div>
-							</fieldset>
+              <!-- escritório -->
+              <fieldset class="mb-3">
+                <p class="mb-0 d-inline">Escritório:</p>
+                <div class="form-check form-check-inline ms-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="escritorio"
+                    id="escritorio-sao-paulo"
+                    value="sao-paulo"
+                    required
+                  />
+                  <label class="form-check-label" for="escritorio-sao-paulo">
+                    São Paulo
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="escritorio"
+                    id="escritorio-santos"
+                    value="santos"
+                    required
+                  />
+                  <label class="form-check-label" for="escritorio-santos">
+                    Santos
+                  </label>
+                </div>
+              </fieldset>
 
-							<!-- estação de trabalho -->
-							<fieldset class="mb-3">
-								<label class="form-label" for="estacao">Estações de trabalho disponíveis:</label>
-								<select id="estacao" class="ms-2" required>
-									<option selected disabled value="">Selecione uma estação</option>
-									<option aria-label="estação número 2" value="2">2</option>
-									<option aria-label="estação número 6" value="6">6</option>
-									<option aria-label="estação número 9" value="9">9</option>
-									<option aria-label="estação número 11" value="11">11</option>
-									<option aria-label="estação número 15" value="15">15</option>
-								</select>
-							</fieldset>
+              <!-- estação de trabalho -->
+              <fieldset class="mb-3">
+                <label class="form-label" for="estacao"
+                  >Estações de trabalho disponíveis:</label
+                >
+                <select id="estacao" class="ms-2" required>
+                  <option selected disabled value="">
+                    Selecione uma estação
+                  </option>
+                  <option aria-label="estação número 2" value="2">2</option>
+                  <option aria-label="estação número 6" value="6">6</option>
+                  <option aria-label="estação número 9" value="9">9</option>
+                  <option aria-label="estação número 11" value="11">11</option>
+                  <option aria-label="estação número 15" value="15">15</option>
+                </select>
+              </fieldset>
 
-							<!-- botão -->
-							<button class="btn d-block mt-3 ms-auto text-light" id="botao-agendamento" type="submit">
-								Confirmar
-							</button>
-						</form>
+              <!-- botão -->
+              <button
+                class="btn d-block mt-3 ms-auto text-light"
+                id="botao-agendamento"
+                type="submit"
+              >
+                Confirmar
+              </button>
+            </form>
 
-						<!-- modal -->
-						<div
-							class="modal fade"
-							id="modal-agendamento"
-							tabindex="-1"
-							aria-labelledby="modal-agendamentoLabel"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h3 class="modal-title" id="modal-agendamentoLabel">
-											<i class="far fa-calendar-check text-success me-1"></i>
-											Agendamento Concluído!
-										</h3>
-									</div>
-									<div class="modal-body"></div>
-									<div class="modal-footer">
-										<button type="button" class="btn text-light fw-bold" data-bs-dismiss="modal">Fechar</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+            <!-- modal -->
+            <div
+              class="modal fade"
+              id="modal-agendamento"
+              tabindex="-1"
+              aria-labelledby="modal-agendamentoLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="modal-agendamentoLabel">
+                      <i class="far fa-calendar-check text-success me-1"></i>
+                      Agendamento Concluído!
+                    </h3>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn text-light fw-bold"
+                      data-bs-dismiss="modal"
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<footer class="py-5 px-3 px-md-0 bg-dark text-white">
-			<div class="container">
-				<div class="row mb-5">
-					<!-- logo -->
-					<div class="d-flex justify-content-center justify-content-md-start col-md-6">
-						<div>
-							<a href="https://fcamara.com.br" target="_blank">
-								<p class="sr-only">Página Inicial Grupo FCamara</p>
-								<img src="https://d335luupugsy2.cloudfront.net/cms/files/107693/1603824721/$sho34j629r8" alt="" />
-							</a>
-						</div>
-					</div>
-					<!-- links -->
-					<div class="col-md-6 d-flex justify-content-center justify-content-md-end mt-sm-5 mt-md-0">
-						<div
-							class="d-flex flex-column align-items-center flex-md-row justify-content-md-between align-items-md-center"
-						>
-							<p class="ms-0 ms-md-2 p-3 mb-0"><a class="text-white" href="#info">Informações</a></p>
-							<p class="ms-0 ms-md-2 p-3 mb-0">
-								<a class="text-white" href="#protocolos">Protocolos</a>
-							</p>
-							<p class="ms-0 ms-md-2 p-3 mb-0">
-								<a class="text-white" href="#agendamento">Agendamento</a>
-							</p>
-						</div>
-					</div>
-				</div>
+    <footer class="py-5 px-3 px-md-0 bg-dark text-white">
+      <div class="container">
+        <div class="row mb-5">
+          <!-- logo -->
+          <div
+            class="
+              d-flex
+              justify-content-center justify-content-md-start
+              col-md-6
+            "
+          >
+            <div>
+              <a href="https://fcamara.com.br" target="_blank">
+                <p class="sr-only">Página Inicial Grupo FCamara</p>
+                <img
+                  src="https://d335luupugsy2.cloudfront.net/cms/files/107693/1603824721/$sho34j629r8"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <!-- links -->
+          <div
+            class="
+              col-md-6
+              d-flex
+              justify-content-center justify-content-md-end
+              mt-sm-5 mt-md-0
+            "
+          >
+            <div
+              class="
+                d-flex
+                flex-column
+                align-items-center
+                flex-md-row
+                justify-content-md-between
+                align-items-md-center
+              "
+            >
+              <p class="ms-0 ms-md-2 p-3 mb-0">
+                <a class="text-white" href="#info">Informações</a>
+              </p>
+              <p class="ms-0 ms-md-2 p-3 mb-0">
+                <a class="text-white" href="#protocolos">Protocolos</a>
+              </p>
+              <p class="ms-0 ms-md-2 p-3 mb-0">
+                <a class="text-white" href="#agendamento">Agendamento</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
-				<hr class="text-muted" />
+        <hr class="text-muted" />
 
-				<!-- Créditos -->
-				<div class="d-md-flex justify-content-md-between mt-3" id="creditos">
-					<div class="text-center text-md-start">
-						<p>Desenvolvido por Esther Marie Reis</p>
-					</div>
-					<div class="text-center text-md-start">
-						<p><a class="text-decoration-none" href="https://storyset.com/">Ilustrações feitas por Storyset</a></p>
-					</div>
-				</div>
-			</div>
-		</footer>
+        <!-- Créditos -->
+        <div class="d-md-flex justify-content-md-between mt-3" id="creditos">
+          <div class="text-center text-md-start">
+            <p>Desenvolvido por Esther Marie Reis</p>
+          </div>
+          <div class="text-center text-md-start">
+            <p>
+              <a class="text-decoration-none" href="https://storyset.com/"
+                >Ilustrações feitas por Storyset</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-			crossorigin="anonymous"
-		></script>
-		<script src="./js/script.js"></script>
-	</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
