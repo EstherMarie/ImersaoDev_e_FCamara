@@ -1,6 +1,6 @@
 # Imersao Dev & FCamara
 
-<img alt="license" src="https://img.shields.io/github/license/EstherMarie/Projeto_FCamara">
+<img alt="license" src="https://img.shields.io/github/license/EstherMarie/ImersaoDev_e_FCamara">
 
 > Projeto desenvolvido para o processo seletivo Imersão Dev & FCamara organizado pelo Grupo FCamara.
 
@@ -28,7 +28,7 @@ Nome: João | E-mail: joao@email.com
 - HTML
 - CSS
 - JavaScript
-- Bootstrap5
+- Bootstrap 5
 
 ## Acessibilidade
 
@@ -41,7 +41,7 @@ Para garantir que todo o conteúdo da Landing Page seja acessível a todos, o pr
 
 ## Conteúdo complementar
 
-- <a href="https://esthermarie.notion.site/Artigo-Imers-o-Dev-FCamara-2d3379b858484eafa8b25625ded20ee5">Apontamentos no Notion</a>
+- <a href="https://esthermarie.notion.site/Apontamentos-Imers-o-Dev-FCamara-2d3379b858484eafa8b25625ded20ee5">Apontamentos no Notion</a>
 - <a href="https://miro.com/app/board/o9J_ltRVNEA=/" target="_blank">Wireframe</a>
 - <a href="https://github.com/EstherMarie/Projeto_FCamara/projects/1" target="_blank">Quadro de tarefas do GitHub</a>
 
