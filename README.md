@@ -41,7 +41,7 @@ Para garantir que todo o conteúdo da Landing Page seja acessível a todos, o pr
 
 ## Conteúdo complementar
 
-- <a href="https://esthermarie.notion.site/Apontamentos-Imers-o-Dev-FCamara-2d3379b858484eafa8b25625ded20ee5">Apontamentos no Notion</a>
+- <a href="https://esthermarie.notion.site/Apontamentos-Imers-o-Dev-FCamara-c613a1a49c1d45e893c22469960677f0">Apontamentos no Notion</a>
 - <a href="https://miro.com/app/board/o9J_ltRVNEA=/" target="_blank">Wireframe</a>
 - <a href="https://github.com/EstherMarie/Projeto_FCamara/projects/1" target="_blank">Quadro de tarefas do GitHub</a>
 
